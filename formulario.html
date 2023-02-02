@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Victoria">
+    <meta name="revised" content="22/02/2022">
+    <meta name="description" content="Pagina Web Responsive">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos/style.css" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+
+<body class="cuerpo">
+    
+    <div class="encabe">
+        <h1>Formulario de Contacto</h1>
+        <a href="index.html" class="logo"><video src="img/Logo1.mp4" autoplay muted loop></video></a>
+    </div>  
+        <form action="" method="post" id="formulario">
+            <legend>*Campo Obligatorio</legend>
+
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nomb">Nombre completo (*):</label><br>
+                <input type="text" name="nombre" id="nomb" placeholder="Escriba su nombre y apellidos" style="width: 200px;height: 20px;" required>
+                <br /><br/>
+                <label for="correo">Email(*):</label><br>
+                <input type="email" name="correo" id="correo" placeholder="Escriba su correo" style="width: 300px;height: 20px;" required>
+                <br/><br/>
+                <label>Curriculum Vitae (PDF):</label>
+                <input type="file" name="archivo">
+                <br/><br/>
+                <label for="info">Informacion personal adicional</label><br/>
+                <textarea name="infoadicional" id="info" placeholder="Escriba aquí" cols="65" rows="5"></textarea>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Preferencias</legend>
+                <label>Elige la opción u opciones que prefieras:</label><br>
+                <input type="checkbox" name="opc1" id="opc1"><label for="opc1">Ordenadores Sobremesa</label><br/>
+                <input type="checkbox" name="opc2" id="opc2"><label for="opc2">Portátiles</label><br/>
+                <input type="checkbox" name="opc3" id="opc3"><label for="opc3">Móviles</label><br/>
+                <input type="checkbox" name="opc4" id="opc4"><label for="opc4">Tablets</label><br/>
+            </fieldset>
+            <br/>
+            <label>Terminos y condiciones(*):</label><br/>
+            <input type="radio" name="condiciones" id="acept" required><label for="acept">Acepto</label>
+            <input type="radio" name="condiciones" id="noacept"><label for="noacept">No acepto</label>
+            <br/>
+            <input type="submit" name="reservar" value="Enviar">
+        </form>
+</body>
+
+</html>
